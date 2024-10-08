@@ -1,0 +1,7 @@
+services:
+  tokai-ml-cifar10:
+    build:
+      dockerfile: ./docker/rootful/Dockerfile
+      args:
+        - UID=${HOST_UID-1000}
+        - GID=${HOST_GID-1000}
